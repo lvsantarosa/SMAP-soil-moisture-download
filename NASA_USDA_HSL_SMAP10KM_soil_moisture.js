@@ -1,4 +1,4 @@
-//GEE code: https://code.earthengine.google.com/?scriptPath=users%2Flucassantarosa%2FSBSR%3ADatasets%2FNASA_USDA_HSL_SMAP10KM_soil_moisture
+//GEE code: https://code.earthengine.google.com/6ab400ae15808b9298f870fc61f18743
 
 var batch = require('users/fitoprincipe/geetools:batch');
 
