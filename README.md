@@ -12,7 +12,7 @@ This dataset was developed by the Hydrological Science Laboratory at NASA's Godd
 
 See: https://developers.google.com/earth-engine/datasets/catalog/NASA_USDA_HSL_SMAP10KM_soil_moisture#description
 
-## Process
+## Processing
 
 Processing was done in R to convert daily data into monthly and annual data. Subsequently, graphic products such as annual maps and animation were generated. An interesting finding in these data analyzed for the Tacurembó river basin is that in the driest years (2021 and 2022) the zones where the eucalyptus plantations are located had lower values of soil moisture in the subsurface, indicating greater consumption by transpiration. More evidence will be collected to assess this scenario.
 
