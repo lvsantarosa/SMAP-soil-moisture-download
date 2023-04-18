@@ -77,9 +77,22 @@ ggplot() +
         legend.key.height = ggplot2::unit(40L, "pt")) +
   labs(caption = "2016-2022 Yeartly Subsurface soil moisture\n Source: NASA-USDA Enhanced SMAP Global Soil Moisture Data 0.1 deg.")
 
+##############################################################
 # Animate 
 animation <- tm_shape(out_y1)+tm_raster()+
              tm_facets(nrow = 1, ncol = 1)
 animation
 tmap_animation(animation, filename = "Animation.mp4", 
                width=1200, height = 600, fps = 2, outer.margins = 0)
+
+##############################################################
+# Wabmap
+library(tmap)
+map <- tm_shape(sf::st_as_sf(TC)) + tm_borders(col="black") +
+  tm_shape(raster::raster(out_y1))+tm_raster()+
+  tm_basemap(server = 'Esri.WorldImagery')
+
+tmap_mode("view")
+map
+tmap_save(map, "Test_SMAP_webmap.html")
+
