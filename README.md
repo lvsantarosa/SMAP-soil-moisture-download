@@ -18,7 +18,7 @@ Processing was done in R to convert daily data into monthly and annual data. Sub
 
 Let's go ahead
 
-#### Maps
+#### Maps 
 
 ![Rplot01](https://user-images.githubusercontent.com/60663771/228826172-647f45ee-f9fd-4593-a9fa-86d58a658ba6.jpeg)
 
